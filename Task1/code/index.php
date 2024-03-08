@@ -125,3 +125,12 @@ if($currentValue > $targetValue)
 else
     echo "You cant get $targetValue by summing up this numbers\n";
 
+
+function printStringReturnNumber()
+{
+    echo "smth\n";
+    return rand();
+}
+
+$my_num = printStringReturnNumber();
+echo "$my_num\n";
