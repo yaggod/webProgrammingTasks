@@ -188,3 +188,54 @@ while($numberToHandle > 9)
     }
     $numberToHandle = $tempValue;
 }
+
+$wordsArray = [];
+$wordsCount = 5;
+$wordBase = 'x';
+for($i = 0; $i < $wordsCount; $i++)
+{
+    $wordsArray[$i] = repeat($wordBase, $i + 1);
+}
+
+function arrayFill($value, $count)
+{
+    $result = [];
+    for($i = 0; $i < $count; $i++)
+    {
+        $result[$i] = $value;
+    }
+
+    return $result;
+}
+
+$twoDimensionalArray = [[1, 2, 3], [4, 5], [6]];
+$sum = 0;
+foreach($twoDimensionalArray as $subArray)
+{
+    foreach($subArray as $arrayItem)
+    {
+        $sum += $arrayItem;
+    }
+}
+
+$twoDimensionalArrayToCreate = [];
+$rowsCount = 3;
+$columnsCount = 3;
+$currentValue = 1;
+
+for($row = 0; $row < $rowsCount; $row++)
+{
+    $subArrayToCreate = [];
+    for($column = 0; $column < $columnsCount; $column++)
+    {
+        $subArrayToCreate[$column] = $currentValue++;
+    }
+    $twoDimensionalArray[$row] = $subArrayToCreate;
+}
+
+$numbers = [2, 5, 3, 9];
+$result = $numbers[0] * $numbers[3] + $numbers[1] * $numbers[2];
+echo "$numbers[0] * $numbers[3] + $numbers[1] * $numbers[2] is $result\n";
+
+$user = array("name" => "Yaroslav", "surname" => "Yagodkin", "patronymic" => "Dmitriyevich");
+echo "$user[surname] $user[name] $user[patronymic]\n";
