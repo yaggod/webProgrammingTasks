@@ -48,9 +48,9 @@ echo "\na % 3 is ", $a % $b;
 
 if($a % $b == 0)
 {
-    echo "\n$a is dividable by $b and {$a}/{$b} = ", $a / $b;
+    echo "\n$a is dividable by $b and {$a}/{$b}=", $a / $b;
 }
 else
 {
-    echo "\n$a is not dividable by $b and {$a}%{$b} = ", $a % $b;
+    echo "\n$a is not dividable by $b and {$a}%{$b}=", $a % $b;
 }
