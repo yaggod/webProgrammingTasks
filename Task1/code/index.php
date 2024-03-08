@@ -10,3 +10,7 @@ $order .= " and water";
 
 // Don't change the line below
 echo "\nYour order is: $very_bad_unclear_name.";
+
+
+$int = 123;
+echo "\n$int";
