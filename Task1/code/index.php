@@ -155,9 +155,9 @@ function repeat($string, $count)
     return $result;
 }
 
-echo repeatThreeTimes("\n");
+echo repeatThreeTimes("one "), "\n";
 
-echo increaseEnthusiasm(repeatThreeTimes(("a\n"))), "\n";
+echo increaseEnthusiasm(repeatThreeTimes(("abc"))), "\n";
 
 // i guess, it has to be passed by the reference, not the value?
 function cut(&$stringToCut, $countToKeep = 10)
