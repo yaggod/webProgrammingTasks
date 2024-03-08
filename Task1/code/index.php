@@ -97,7 +97,7 @@ for($i = 0; $i < count($unsignedArray); $i++)
     $signedArray[$i] = abs($unsignedArray[$i]);
 }
 
-$valueToFindDivisors = rand();
+$valueToFindDivisors = rand(0, 10000);
 $divisors = [];
 echo "$valueToFindDivisors divisors is:\n";
 for($i = 1; $i <= $valueToFindDivisors; $i++)
@@ -108,3 +108,20 @@ for($i = 1; $i <= $valueToFindDivisors; $i++)
     array_push($divisors, $i);
     echo "\t$i\n";
 }
+
+$valuesToSum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+$targetValue = 10;
+$currentValue = 0;
+for($i = 0; $i < count($valuesToSum);)
+{
+    $currentValue += $valuesToSum[$i++];
+    echo "Current value: $currentValue\t";
+    if($currentValue > $targetValue)
+        break;
+}
+
+if($currentValue > $targetValue)
+    echo "To get value bigger (strictly) than $targetValue, you have to sum first $i numbers\n";
+else
+    echo "You cant get $targetValue by summing up this numbers\n";
+
