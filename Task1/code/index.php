@@ -41,3 +41,16 @@ $answer -= 2;
 $answer /= 2;
 $answer -= $my_num;
 echo "\n$answer";
+
+$a = 10;
+$b = 3;
+echo "\na % 3 is ", $a % $b;
+
+if($a % $b == 0)
+{
+    echo "\n$a is dividable by $b and {$a}/{$b} = ", $a / $b;
+}
+else
+{
+    echo "\n$a is not dividable by $b and {$a}%{$b} = ", $a % $b;
+}
