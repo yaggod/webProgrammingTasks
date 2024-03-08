@@ -288,3 +288,9 @@ $arr = [];
 if(count($arr) == 3)
     echo $arr[0] + $arr[1] + $arr[2];
 
+$rowsCount = 20;
+$currentLine = "";
+for($i = 0; $i < $rowsCount; $i++) {
+    $currentLine .= "x";
+    echo $currentLine, "\n";
+}
