@@ -63,3 +63,11 @@ foreach($values as $arrayItem)
 {
     echo "Square root of $arrayItem is ", sqrt($arrayItem), "\n";
 }
+
+$valueToRound = sqrt(379);
+echo "Rounded value of $valueToRound is \n\t", round($valueToRound), "\nor\t", round($valueToRound, 1), "\nor\t", round($valueToRound, 2), "\n";
+
+$valueToRound = sqrt(587);
+$dictionary = array("floor" => floor($valueToRound), "ceil" => ceil($valueToRound));
+echo "Floor: $dictionary[floor], Ceil: $dictionary[ceil]\n";
+
