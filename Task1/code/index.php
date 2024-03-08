@@ -54,3 +54,12 @@ else
 {
     echo "\n$a is not dividable by $b and {$a}%{$b}=", $a % $b;
 }
+
+$st = pow(2, 10);
+$squareRoot = sqrt(245);
+
+$values = [4, 2, 5, 19, 13, 0, 10];
+foreach($values as $arrayItem)
+{
+    echo "\nSquare root of $arrayItem is ", sqrt($arrayItem);
+}
