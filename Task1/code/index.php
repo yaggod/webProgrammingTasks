@@ -78,3 +78,10 @@ foreach($valuesToSearchIn as $arrayItem)
 $minimalFoundValue = min($valuesToSearchIn);
 $maximumFoundValue = max($valuesToSearchIn);
 echo "Among values $arrayString\n\t$minimalFoundValue is the smallest one, \n\t$maximumFoundValue is the biggest one\n";
+
+echo "Random number between 1 and 100 is ", rand(1, 100), "\n";
+
+$arrayToFill = [];
+for($i = 0; $i < 10; $i++)
+    $arrayToFill[$i] = rand();
+
