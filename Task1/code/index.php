@@ -71,3 +71,10 @@ $valueToRound = sqrt(587);
 $dictionary = array("floor" => floor($valueToRound), "ceil" => ceil($valueToRound));
 echo "Floor: $dictionary[floor], Ceil: $dictionary[ceil]\n";
 
+$valuesToSearchIn = [4, -2, 5, 19, -130, 0, 10];
+$arrayString = "";
+foreach($valuesToSearchIn as $arrayItem)
+    $arrayString .= "$arrayItem ";
+$minimalFoundValue = min($valuesToSearchIn);
+$maximumFoundValue = max($valuesToSearchIn);
+echo "Among values $arrayString\n\t$minimalFoundValue is the smallest one, \n\t$maximumFoundValue is the biggest one\n";
