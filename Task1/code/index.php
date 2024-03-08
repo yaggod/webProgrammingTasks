@@ -142,3 +142,20 @@ function increaseEnthusiasm($string)
 
 echo increaseEnthusiasm("Some string"), "\n";
 
+function repeatThreeTimes($string)
+{
+    return repeat($string, 3);
+}
+
+function repeat($string, $count)
+{
+    $result = "";
+    for($i = 0; $i < $count; $i++)
+        $result .= $string;
+    return $result;
+}
+
+echo repeatThreeTimes("\n");
+
+echo increaseEnthusiasm(repeatThreeTimes(("a\n"))), "\n";
+
