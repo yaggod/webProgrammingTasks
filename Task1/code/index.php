@@ -48,11 +48,11 @@ echo "a % 3 is ", $a % $b, "\n";
 
 if($a % $b == 0)
 {
-    echo "$a is dividable by $b and {$a}/{$b}=", $a / $b, "\n";
+    echo "$a is dividable by $b and $a/$b=", $a / $b, "\n";
 }
 else
 {
-    echo "$a is not dividable by $b and {$a}%{$b}=", $a % $b, "\n";
+    echo "$a is not dividable by $b and $a%$b=", $a % $b, "\n";
 }
 
 $st = pow(2, 10);
@@ -315,7 +315,6 @@ function fillDictionary(&$destination, $words, $currentIndex = 0)
     if($currentIndex >= count($words))
         return;
 
-    echo "1";
     $destination[$words[$currentIndex]] = $currentIndex + 1;
     fillDictionary($destination, $words,$currentIndex + 1);
 }
