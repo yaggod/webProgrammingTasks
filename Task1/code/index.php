@@ -323,3 +323,14 @@ function fillDictionary(&$destination, $words, $currentIndex = 0)
 $dictionary = [];
 $words = range("a", "z");
 fillDictionary($dictionary, $words);
+
+function calculateGroupsSum($string, $substringLength, $currentIndex = 0)
+{
+    if($currentIndex >= strlen($string))
+        return 0;
+    $substring = substr($string, $currentIndex, $substringLength);
+    return intval($substring) + calculateGroupsSum($string, $substringLength, $currentIndex + $substringLength);
+}
+
+$pairsString = "1234567890";
+echo calculateGroupsSum($pairsString, 2);
