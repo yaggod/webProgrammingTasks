@@ -159,3 +159,12 @@ echo repeatThreeTimes("\n");
 
 echo increaseEnthusiasm(repeatThreeTimes(("a\n"))), "\n";
 
+// i guess, it has to be passed by the reference, not the value?
+function cut(&$stringToCut, $countToKeep = 10)
+{
+    $stringToCut = substr($stringToCut, 0, $countToKeep);
+}
+
+$string = "4397idfgi";
+cut($string, 2);
+echo $string, "\n";
