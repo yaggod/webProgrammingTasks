@@ -97,3 +97,14 @@ for($i = 0; $i < count($unsignedArray); $i++)
     $signedArray[$i] = abs($unsignedArray[$i]);
 }
 
+$valueToFindDivisors = rand();
+$divisors = [];
+echo "$valueToFindDivisors divisors is:\n";
+for($i = 1; $i <= $valueToFindDivisors; $i++)
+{
+    if($valueToFindDivisors % $i != 0)
+        continue;
+
+    array_push($divisors, $i);
+    echo "\t$i\n";
+}
