@@ -248,3 +248,43 @@ echo count($arr), "\n";
 
 echo "Latest item is ", $arr[count($arr) - 1], "\n";
 echo "Prelatest item is ", $arr[count($arr) - 2], "\n";
+
+function isSumMoreThanTwo($firstNumber, $secondNumber)
+{
+    return $firstNumber + $secondNumber > 10;
+}
+function isEqual($firstNumber, $secondNumber)
+{
+    return $firstNumber == $secondNumber;
+}
+
+
+// Original fragment:
+/*
+if ($test == 0) {
+    echo 'верно';
+}
+*/
+
+$test = 0;
+echo $test ? "" : "верно\n";
+
+$age = rand(0, 120);
+if($age > 99 || $age < 10)
+{
+    echo "$age is outside of (10; 99) bounds\n";
+}
+else
+{
+    $digitsSum = $age % 10;
+    $digitsSum = ($age - $digitsSum) / 10;
+    echo "Sum of digits from the number $age is : ", $digitsSum > 9 ? "double digit\n" : "single digit\n";
+}
+
+$arr = [];
+// some assignments
+// ...
+
+if(count($arr) == 3)
+    echo $arr[0] + $arr[1] + $arr[2];
+
