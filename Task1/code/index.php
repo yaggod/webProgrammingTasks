@@ -17,3 +17,6 @@ echo "\n$int";
 
 $float = 12.3;
 echo "\n$float";
+
+$value = 11 + 1;
+echo "\n$value";
