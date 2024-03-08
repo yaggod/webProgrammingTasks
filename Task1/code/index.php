@@ -134,3 +134,11 @@ function printStringReturnNumber()
 
 $my_num = printStringReturnNumber();
 echo "$my_num\n";
+
+function increaseEnthusiasm($string)
+{
+    return $string . "!";
+}
+
+echo increaseEnthusiasm("Some string"), "\n";
+
