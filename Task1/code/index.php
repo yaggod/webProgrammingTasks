@@ -168,6 +168,15 @@ function cut(&$stringToCut, $countToKeep = 10)
 $string = "4397idfgi";
 cut($string, 2);
 
+function printArrayRecursively($arrayToPrint, $currentIndex = 0)
+{
+    if($currentIndex >= count($arrayToPrint))
+        return;
+
+    echo "\t$arrayToPrint[$currentIndex]\n";
+    printArrayRecursively($arrayToPrint, $currentIndex + 1);
+}
+
 $numberToHandle = rand();
 while($numberToHandle > 9)
 {
