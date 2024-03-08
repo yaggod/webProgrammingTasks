@@ -14,3 +14,6 @@ echo "\nYour order is: $very_bad_unclear_name.";
 
 $int = 123;
 echo "\n$int";
+
+$float = 12.3;
+echo "\n$float";
