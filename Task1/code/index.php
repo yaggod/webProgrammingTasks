@@ -24,3 +24,9 @@ echo "\n$value";
 $lastMonth = 1187.23;
 $thisMonth = 1089.98;
 echo "\nLast month i've spent ", $lastMonth - $thisMonth, " more";
+
+$numLanguages = 3; // i think that languagesCount is way better name for this but ok
+$months = 11; // monthsSpent ?
+$days = $months * 16; // ^
+$daysPerLanguage = $days / $numLanguages;
+echo "\nMegg spent $daysPerLanguage on average for each language";
