@@ -239,3 +239,12 @@ echo "$numbers[0] * $numbers[3] + $numbers[1] * $numbers[2] is $result\n";
 
 $user = array("name" => "Yaroslav", "surname" => "Yagodkin", "patronymic" => "Dmitriyevich");
 echo "$user[surname] $user[name] $user[patronymic]\n";
+
+$date = array("year" => 2024, "month" => 3, "day" => 8);
+echo "$date[year]-$date[month]-$date[day]\n";
+
+$arr = ['a', 'b', 'c', 'd', 'e'];
+echo count($arr), "\n";
+
+echo "Latest item is ", $arr[count($arr) - 1], "\n";
+echo "Prelatest item is ", $arr[count($arr) - 2], "\n";
