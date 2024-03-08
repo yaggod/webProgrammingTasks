@@ -20,3 +20,7 @@ echo "\n$float";
 
 $value = 11 + 1;
 echo "\n$value";
+
+$lastMonth = 1187.23;
+$thisMonth = 1089.98;
+echo "\nLast month i've spent ", $lastMonth - $thisMonth, " more";
