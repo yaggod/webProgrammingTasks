@@ -294,3 +294,32 @@ for($i = 0; $i < $rowsCount; $i++) {
     $currentLine .= "x";
     echo $currentLine, "\n";
 }
+
+$values = [1, 2, 3, 4, 5, 6];
+
+echo "Average value is ", array_sum($values) / count($values), "\n"; // is this actually correct? i am sure that it is implemented with the loop
+
+$sumFrom = 1;
+$sumTo = 100;
+$average = $sumFrom + $sumTo;
+$count = ($sumTo - $sumFrom + 1) / 2;
+echo "Sum of numbers from $sumFrom to $sumTo is ", $average * $count, "\n";
+
+
+// imagine passing functions pointers by their NAMES
+$valuesSquares = array_map("sqrt", $values); // is this actually correct? i am sure that it is implemented with the loop
+
+
+function fillDictionary(&$destination, $words, $currentIndex = 0)
+{
+    if($currentIndex >= count($words))
+        return;
+
+    echo "1";
+    $destination[$words[$currentIndex]] = $currentIndex + 1;
+    fillDictionary($destination, $words,$currentIndex + 1);
+}
+
+$dictionary = [];
+$words = range("a", "z");
+fillDictionary($dictionary, $words);
