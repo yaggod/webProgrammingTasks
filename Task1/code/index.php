@@ -167,3 +167,15 @@ function cut(&$stringToCut, $countToKeep = 10)
 
 $string = "4397idfgi";
 cut($string, 2);
+
+$numberToHandle = rand();
+while($numberToHandle > 9)
+{
+    $tempValue = 0;
+    while($numberToHandle > 0)
+    {
+        $tempValue += $numberToHandle % 10;
+        $numberToHandle = floor($numberToHandle / 10);
+    }
+    $numberToHandle = $tempValue;
+}
