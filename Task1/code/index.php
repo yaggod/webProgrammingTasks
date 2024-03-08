@@ -29,4 +29,15 @@ $numLanguages = 3; // i think that languagesCount is way better name for this bu
 $months = 11; // monthsSpent ?
 $days = $months * 16; // ^
 $daysPerLanguage = $days / $numLanguages;
-echo "\nMegg spent $daysPerLanguage on average for each language";
+echo "\n\nMegg spent $daysPerLanguage on average for each language";
+
+echo "\n", 8**2;
+
+$my_num = 0;
+$answer = $my_num;
+$answer += 2;
+$answer *= 2;
+$answer -= 2;
+$answer /= 2;
+$answer -= $my_num;
+echo "\n$answer";
