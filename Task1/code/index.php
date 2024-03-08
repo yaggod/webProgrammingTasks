@@ -85,3 +85,15 @@ $arrayToFill = [];
 for($i = 0; $i < 10; $i++)
     $arrayToFill[$i] = rand();
 
+
+$a = rand();
+$b = rand();
+echo "|$a - $b| is ", abs($a - $b), "\n";
+
+$unsignedArray = [1, 2, -1, -2, 3, -3];
+$signedArray = [];
+for($i = 0; $i < count($unsignedArray); $i++)
+{
+    $signedArray[$i] = abs($unsignedArray[$i]);
+}
+
