@@ -16,8 +16,8 @@
                 if(!isset($_COOKIE["message"]))
                     return;
                 $message = $_COOKIE["message"];
-                echo str_word_count($message), "<br>";
-                echo strlen($message), "<br>";
+                echo "There are ", str_word_count($message), " words in your message<br>";
+                echo "There are ", strlen($message), " chars in your message <br>";
             ?>
         </div>
         <div>
