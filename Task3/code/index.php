@@ -24,7 +24,7 @@
             <h2>Sessions</h2>
             <h3>Sessions. Part 1</h3>
             <div>
-                <label>Tell us about you</label>
+                <label>Tell us about yourself</label>
                 <form method="post" action="handlePerson.php">
                     <label for="surname">Surname</label>
                     <input id="surname" name="surname"/><br>
@@ -36,7 +36,22 @@
                     <input type="submit"/>
                 </form>
             </div>
+            <h3>Sessions. Part 2</h3>
+            <div>
+                <label>Tell us about yourself</label>
+                <form method="post" action="handlePersonExtended.php">
+                    <label for="name">Name</label>
+                    <input id="name" name="name"/><br>
+                    <label for="age">Age</label>
+                    <input id="age" name="age"/><br>
+                    <label for="salary">Salary</label>
+                    <input id="salary" type="number" name="salary"/><br>
+                    <label for="haveDog">Have any dogs</label>
+                    <input id="haveDog" type="checkbox" name="haveDog"/><br>
 
+                    <input type="submit"/>
+                </form>
+            </div>
         </div>
     </body>
 </html>
