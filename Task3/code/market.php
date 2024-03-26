@@ -25,12 +25,12 @@
 <div>
     <h1>Existing listings</h1>
     <table border="1px">
-        <tr>
+        <thead>
             <th>Seller's name</th>
             <th>Category</th>
             <th>Description</th>
             <th>Seller's email</th>
-        </tr>
+        </thead>
     </table>
 
 </div>
