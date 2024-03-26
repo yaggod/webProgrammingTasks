@@ -4,6 +4,8 @@
     <title>Market</title>
 </head>
 <body>
+<div>
+    <h1>Create your own listing</h1>
     <form method="post" action="createListing.php">
         <label for="email">Your email:</label>
         <input type="email" id="email" name="email"><br>
@@ -18,5 +20,9 @@
         <label for="description">Product description</label>
         <textarea id="description" name="description"></textarea>
     </form>
+</div>
+<div>
+<h1>Existing listings</h1>
+</div>
 </body>
 </html>
