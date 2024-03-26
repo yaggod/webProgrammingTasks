@@ -19,6 +19,7 @@
         <input id="header" name="header"><br>
         <label for="description">Product description</label>
         <textarea id="description" name="description"></textarea>
+        <input type="submit">
     </form>
 </div>
 <div>
