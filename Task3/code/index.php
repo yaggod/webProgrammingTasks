@@ -13,11 +13,11 @@
                 <input type="submit" />
             </form>
             <?php
-                if(!isset($_COOKIE["message"]))
-                    return;
-                $message = $_COOKIE["message"];
-                echo "There are ", str_word_count($message), " words in your message<br>";
-                echo "There are ", strlen($message), " chars in your message <br>";
+                if(isset($_COOKIE["message"])) {
+                    $message = $_COOKIE["message"];
+                    echo "There are ", str_word_count($message), " words in your message<br>";
+                    echo "There are ", strlen($message), " chars in your message <br>";
+                }
             ?>
         </div>
         <div>
