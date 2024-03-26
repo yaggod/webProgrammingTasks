@@ -12,8 +12,8 @@ $numberPattern = "/\d+/";
 $count = preg_match_all($numberPattern, $numbersMixedString, $foundNumbers);
 foreach($foundNumbers[0] as $number)
 {
-    $numberCube = $number * $number * $number; // calling pow() for natural power loewr than 5 is a bad idea
-    $numbersMixedString = preg_replace("/$number/", $numberCube, $numbersMixedString); // i am certain this will work incorrecly in some cases, but in this case it works
+    $numberCube = $number * $number * $number; // calling pow() for natural power lower than 5 is a bad idea
+    $numbersMixedString = preg_replace("/$number/", $numberCube, $numbersMixedString); // i am certain this will work incorrectly in some cases, but in this case it works
 }
 
 echo $numbersMixedString;
