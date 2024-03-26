@@ -46,8 +46,8 @@
                     <input id="age" name="age"/><br>
                     <label for="salary">Salary</label>
                     <input id="salary" type="number" name="salary"/><br>
-                    <label for="haveDog">Have any dogs</label>
-                    <input id="haveDog" type="checkbox" name="haveDog"/><br>
+                    <label for="color">Favourite colour</label>
+                    <input id="color" name="color"/><br>
 
                     <input type="submit"/>
                 </form>

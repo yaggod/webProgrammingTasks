@@ -1,10 +1,10 @@
 <?php
 
-if(!isset($_POST["name"],$_POST["age"],$_POST["salary"], $_POST["haveDog"]))
+if(!isset($_POST["name"],$_POST["age"],$_POST["salary"], $_POST["color"]))
     header("location: index.php");
 
 session_start();
-$_SESSION["personalData"] = [$_POST["name"],$_POST["age"],$_POST["salary"], $_POST["haveDog"]];
+$_SESSION["personalData"] = [$_POST["name"],$_POST["age"],$_POST["salary"], $_POST["color"]];
 
 
 echo "<ul>";
