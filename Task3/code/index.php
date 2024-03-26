@@ -5,9 +5,9 @@
     </head>
     <body>
         <div>
-
+            <h1>Session and Cookies</h1>
             <form method="post" action="handleCookies.php">
-                <label for="text">Sessions and Cookies</label><br>
+                <label for="text">Enter your text</label><br>
                 <textarea id="text" name="text"></textarea><br>
                 <input type="submit" />
             </form>
